@@ -9,7 +9,7 @@
 <body>
   <header>
     <h1>Tectonique</h1>
-    <p>Schémas et explications sur les mouvements des plaques, les failles et plis.</p>
+    <p>Schémas et explications sur les mouvements des plaques, les failles et les plis.</p>
   </header>
 
   <main>
@@ -21,7 +21,7 @@
       </article>
 
       <article class="image-card">
-        <img src="../images/plis.png" alt="Schéma de plis" />
+        <img src="../images/plis.png" alt="Plis" />
         <h3>Plis</h3>
         <p>Les plis se forment lors de déformations ductiles des couches rocheuses.</p>
       </article>
@@ -31,6 +31,7 @@
   <footer>
     <p><a href="../index.html">← Retour à l'accueil</a></p>
   </footer>
+
+  <script src="../script.js"></script>
 </body>
 </html>
-
