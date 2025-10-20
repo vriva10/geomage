@@ -1,3 +1,4 @@
+/* --- Style général --- */
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
@@ -12,6 +13,18 @@ header {
   text-align: center;
 }
 
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #eee;
+  font-size: 0.9rem;
+}
+
+/* --- Page d'accueil : catégories --- */
 .categories {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -36,6 +49,7 @@ header {
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
+/* --- Galerie d'images --- */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -55,4 +69,41 @@ header {
 .image-card img {
   width: 100%;
   height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.image-card img:hover {
+  transform: scale(1.03);
+}
+
+.image-card h3 {
+  margin: 0.8rem 0 0.3rem;
+  color: #2e3b55;
+}
+
+.image-card p {
+  margin: 0;
+  padding: 0 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* --- Effet de zoom sur image --- */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.overlay img.zoomed {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+  transition: transform 0.2s ease;
 }
