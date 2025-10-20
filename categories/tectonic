@@ -3,33 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tectonique – GéoSchémas</title>
+  <title>Tectonic – GeoMages</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
   <header>
     <h1>Tectonique</h1>
-    <p>Schémas et explications sur les mouvements des plaques, les failles et les plis.</p>
+    <p>Schames and images to explain plates movements, faults and foldings.</p>
   </header>
 
   <main>
     <section class="gallery">
       <article class="image-card">
-        <img src="../images/faille_normale.png" alt="Faille normale" />
+        <img src="../images/normal_fault.png" alt="Normal fault" />
         <h3>Faille normale</h3>
-        <p>Une faille normale résulte d’une extension : le bloc supérieur glisse vers le bas.</p>
+        <p>A normal fault results from an extension: the upper block slides downwards.</p>
       </article>
 
       <article class="image-card">
-        <img src="../images/plis.png" alt="Plis" />
+        <img src="../images/fold.png" alt="Fold" />
         <h3>Plis</h3>
-        <p>Les plis se forment lors de déformations ductiles des couches rocheuses.</p>
+        <p>Folds are formed during ductile deformation of rock layers.</p>
       </article>
     </section>
   </main>
 
   <footer>
-    <p><a href="../index.html">← Retour à l'accueil</a></p>
+    <p><a href="../index.html">← Go back to Homepage</a></p>
   </footer>
 
   <script src="../script.js"></script>
