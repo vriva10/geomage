@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tectonique – GéoSchémas</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header>
+    <h1>Tectonique</h1>
+    <p>Schémas et explications sur les mouvements des plaques, les failles et plis.</p>
+  </header>
+
+  <main>
+    <section class="gallery">
+      <article class="image-card">
+        <img src="../images/faille_normale.png" alt="Faille normale" />
+        <h3>Faille normale</h3>
+        <p>Une faille normale résulte d’une extension : le bloc supérieur glisse vers le bas.</p>
+      </article>
+
+      <article class="image-card">
+        <img src="../images/plis.png" alt="Schéma de plis" />
+        <h3>Plis</h3>
+        <p>Les plis se forment lors de déformations ductiles des couches rocheuses.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="../index.html">← Retour à l'accueil</a></p>
+  </footer>
+</body>
+</html>
 
