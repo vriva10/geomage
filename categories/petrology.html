@@ -14,14 +14,23 @@
   </header>
 
   <main>
+    <div class="filter-bar">
+      <label for="typeFilter">Show:</label>
+      <select id="typeFilter">
+        <option value="all">All</option>
+        <option value="photo">Real Photos</option>
+        <option value="scheme">Schemes</option>
+      </select>
+    </div>
+    
     <section class="gallery">
-      <article class="image-card">
-        <img src="../images/bowen_sequence.png" alt="Bowen's sequence" />
+      <article class="image-card" data-type="scheme">
         <h3>Bowen's sequence</h3>
+        <img src="../images/bowen_sequence.png" alt="Bowen's sequence" />
         <p>The Bowen reaction series is a geological concept that describes the order in which minerals crystallize from cooling magma.</p>
       </article>
 
-      <article class="image-card">
+      <article class="image-card" data-type="scheme">
         <img src="../images/metamorphic_facies.png" alt="Metamorphic Facies" />
         <h3>Metamorphic Facies</h3>
         <p>metamorphic facies are specific mineral assemblages in metamorphic rocks that form under similar pressure and temperature (P-T) conditions.</p>
