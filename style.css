@@ -68,6 +68,7 @@ footer {
 
 .image-card img {
   width: 100%;
+  border-radius: 8px;
   height: auto;
   cursor: pointer;
   transition: transform 0.2s ease;
@@ -78,7 +79,7 @@ footer {
 }
 
 .image-card h3 {
-  margin: 0.8rem 0 0.3rem;
+  margin: 0.8rem 0 0.5rem;
   color: #2e3b55;
 }
 
