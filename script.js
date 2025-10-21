@@ -18,4 +18,25 @@ document.addEventListener("DOMContentLoaded", () => {
     overlay.style.display = "none";
     overlay.innerHTML = "";
   });
+
+  // === FILTER FUNCTIONALITY ===
+document.addEventListener("DOMContentLoaded", () => {
+  const filterSelect = document.getElementById("typeFilter");
+  if (!filterSelect) return; // Only run on category pages
+
+  const imageCards = document.querySelectorAll(".image-card");
+
+  filterSelect.addEventListener("change", () => {
+    const selected = filterSelect.value;
+
+    imageCards.forEach(card => {
+      const type = card.dataset.type;
+      if (selected === "all" || type === selected) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
 });
+ 
