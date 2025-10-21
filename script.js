@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // === IMAGE ZOOM FUNCTIONALITY ===
   const images = document.querySelectorAll(".image-card img");
   const overlay = document.createElement("div");
   overlay.classList.add("overlay");
@@ -19,24 +20,17 @@ document.addEventListener("DOMContentLoaded", () => {
     overlay.innerHTML = "";
   });
 
-  // === FILTER FUNCTIONALITY ===
-document.addEventListener("DOMContentLoaded", () => {
+  // === FILTER FUNCTIONALITY (on category pages only) ===
   const filterSelect = document.getElementById("typeFilter");
-  if (!filterSelect) return; // Only run on category pages
+  if (filterSelect) {
+    const imageCards = document.querySelectorAll(".image-card");
 
-  const imageCards = document.querySelectorAll(".image-card");
-
-  filterSelect.addEventListener("change", () => {
-    const selected = filterSelect.value;
-
-    imageCards.forEach(card => {
-      const type = card.dataset.type;
-      if (selected === "all" || type === selected) {
-        card.style.display = "block";
-      } else {
-        card.style.display = "none";
-      }
+    filterSelect.addEventListener("change", () => {
+      const selected = filterSelect.value;
+      imageCards.forEach(card => {
+        const type = card.dataset.type;
+        card.style.display = (selected === "all" || type === selected) ? "block" : "none";
+      });
     });
-  });
+  }
 });
- 
